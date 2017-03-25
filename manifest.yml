@@ -1,0 +1,11 @@
+---
+declared-services:
+  selsoftTextToSpeechService:
+    label: selsoftTextToSpeech
+    plan: standard
+applications:
+- services:
+  - selsoftTextToSpeechService
+  name: selsoftTextToSpeech
+  path: target/selsoftTextToSpeech-1.0-SNAPSHOT.war
+  memory: 128M
